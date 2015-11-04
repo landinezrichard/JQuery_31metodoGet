@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8"/>
+		<title>31 Metodo .GET</title>				
+				
+		<!--Scripts Aca -->
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js">		
+		</script>
+		
+		<script type="text/javascript">		
+			
+			$(document).on("ready",function(){
+				$.get("hola.php",{nombre:"Ricardo"},function(data){
+					$("#receptor").html(data);
+				});		
+			});
+		
+		</script>
+		
+	</head>
+	<body>
+		<div id="receptor">
+		</div>			
+	</body>
+</html>
